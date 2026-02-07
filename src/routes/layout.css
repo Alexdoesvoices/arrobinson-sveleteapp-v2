@@ -36,8 +36,8 @@ h1 {
     font-size: 35px;
     text-shadow: 0 0 15px rgba(0, 119, 255, 0.4);
 }
-@media (prefers-reduced-motion: no-preference) {
+@media (pointer: coarse) {
   html {
-    scroll-behavior: smooth;
+    scroll-behavior: auto !important;
   }
 }
