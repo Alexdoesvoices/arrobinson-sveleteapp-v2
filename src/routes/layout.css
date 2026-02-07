@@ -16,9 +16,11 @@ body, html {
     height: auto;
     min-height: 100vh;
     z-index: -1;
-}
-html {
+
+    -webkit-overflow-scrolling: touch; 
+    backface-visibility: hidden;
     scroll-behavior: smooth !important;
+
 }
 section {
     min-height: 100vh;
