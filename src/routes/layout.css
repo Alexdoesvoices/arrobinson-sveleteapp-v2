@@ -1,2 +1,34 @@
-@import 'tailwindcss';
+@import "tailwindcss/theme";
+@import "tailwindcss/utilities";
 @plugin '@tailwindcss/typography';
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+body, html {
+    background-color: black;
+    width: 100%;
+    overscroll-behavior-x: none;
+    overscroll-behavior-y: none;
+    overflow-x: hidden;
+    height: auto;
+    min-height: 100vh;
+    z-index: -1;
+}
+html {
+    scroll-behavior: smooth !important;
+}
+section {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    color: whitesmoke;
+    z-index: 10;
+    padding: 50px 0;
+    top: 0;
+}

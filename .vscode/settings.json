@@ -1,5 +1,13 @@
 {
+	"path-intellisense.mappings": {
+    "/": "${workspaceFolder}/static"
+  },
 	"files.associations": {
 		"*.css": "tailwindcss"
-	}
+	},
+  
+  "editor.snippetSuggestions": "bottom",
+  "editor.suggestSelection": "recentlyUsed",
+  "editor.suggest.localityBonus": true,
+  "editor.suggest.showFiles": true
 }
