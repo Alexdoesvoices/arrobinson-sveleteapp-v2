@@ -40,7 +40,7 @@
 
 
 <footer>
-    <p>Hey there</p>
+    <p>I can smell ya</p>
 </footer>
 
 
