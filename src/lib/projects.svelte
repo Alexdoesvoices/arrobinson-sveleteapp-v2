@@ -11,7 +11,7 @@
             ],
         },
          {
-        title: 'Alexdoesvoices Collection Docs',
+        title: 'Alexdoesvoices Collection',
         description: 'Documentation site used as a digital databse of all items in my various collections.',
         image: '/assets/images/arobinson6.svg',
         link: 'https://collections.alexdoesvoices.com',
