@@ -10,6 +10,19 @@
                 { name: 'DiscordJS', color: '#3178c6' },
             ],
         },
+         {
+        title: 'Alexdoesvoices Collection Docs',
+        description: 'Documentation site used as a digital databse of all items in my various collections.',
+        image: '/assets/images/arobinson6.svg',
+        link: 'https://collections.alexdoesvoices.com',
+        link2: '',
+        tags: [
+                { name: 'Astro Starlight', color: '#28243a' },
+                { name: 'Bun', color: '#f472b6' }, 
+                { name: 'Caddy', color: '#034a18' }, 
+
+            ],
+        },
     ]
 </script>
 
@@ -42,6 +55,7 @@
                             View Project
                         </a>
                     </div>
+                    
                 </div>
             </div>
         {/each}
