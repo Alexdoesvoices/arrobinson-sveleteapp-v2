@@ -3,6 +3,7 @@
     import Projects from "$lib/projects.svelte";
     import Top from "$lib/top.svelte";
     import Navbar from "$lib/nav.svelte";
+    import Projectssection from "$lib/projects/projectssection.svelte";
 </script>
 
 <main>
@@ -10,6 +11,7 @@
     <Top />
     <!-- <About /> -->
     <Projects />
+    <!-- <Projectssection /> -->
 </main>
 
 
