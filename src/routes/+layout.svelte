@@ -40,7 +40,7 @@
 
 
 <footer>
-    <p>I can smell ya</p>
+    <p>Made with Sveltekit</p>
 </footer>
 
 
