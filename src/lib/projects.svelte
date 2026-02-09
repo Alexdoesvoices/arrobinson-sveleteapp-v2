@@ -15,7 +15,6 @@
         description: 'Documentation site used as a digital databse of all items in my various collections.',
         image: '/assets/images/arobinson6.svg',
         link: 'https://collections.alexdoesvoices.com',
-        link2: '',
         tags: [
                 { name: 'Astro Starlight', color: '#28243a' },
                 { name: 'Bun', color: '#f472b6' }, 
@@ -65,7 +64,7 @@
 <style>
     :root {
         --card-max-width: 900px;
-        --card-fixed-height: 320px;
+        --card-fixed-height: 300px;
         --image-ratio: 35%;
         --bg-card: #1c1c1f;
         --bg-border: #2d2d30;
@@ -123,7 +122,7 @@
         padding: 2.5rem 3rem;
         display: flex;
         flex-direction: column;
-        overflow: hidden; 
+        /* overflow: hidden;  */
     }
 
     .text-top {
