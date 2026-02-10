@@ -1,10 +1,13 @@
 <script lang="ts">
-    let projects = [
+    const  projects = [
          {
         title: 'Alexdoesvoices DiscordJs Bot',
         description: 'Discord bot built with the BUN runtime and the Discord.js framework.',
         image: '/assets/images/bun/logo-centered.svg',
         link: 'https://github.com/Alexdoesvoices/discordjs-adev-bot',
+        github: 'https://github.com/Alexdoesvoices/discordjs-adev-bot',
+        more: '#',
+
         tags: [
                 { name: 'Bun', color: '#f472b6' }, 
                 { name: 'DiscordJS', color: '#3178c6' },
@@ -15,6 +18,8 @@
         description: 'Documentation site used as a digital databse of all items in my various collections.',
         image: '/assets/images/arobinson6.svg',
         link: 'https://collections.alexdoesvoices.com',
+        github: 'https://github.com/Alexdoesvoices/alexdoesvoices-collection',
+        more: '/projects/collections',
         tags: [
                 { name: 'Astro Starlight', color: '#28243a' },
                 { name: 'Bun', color: '#f472b6' }, 
@@ -25,7 +30,7 @@
     ]
 </script>
 
-<section id="projects">
+<section id="projects" class="projects">
     <h1>Projects</h1>
 
     <div class="projects-container">
@@ -50,9 +55,21 @@
                 </div>
 
                     <div class="link-area">
+                        {#if project.link !== '#'}
                         <a href={project.link} target="_blank" rel="noopener noreferrer" class="project-link">
                             View Project
                         </a>
+                        {/if}
+                        {#if project.github !== '#'}
+                        <a href={project.github} target="_blank" rel="noopener noreferrer" class="github-link">
+                            Github
+                        </a>
+                        {/if}
+                        {#if project.more !== '#'}
+                        <a href={project.more} rel="noopener noreferrer" class="moreinfo-link">
+                            More Info
+                        </a>
+                        {/if}
                     </div>
                     
                 </div>
@@ -62,7 +79,7 @@
 </section>
 
 <style>
-    :root {
+    section.projects {
         --card-max-width: 900px;
         --card-fixed-height: 300px;
         --image-ratio: 35%;
@@ -70,6 +87,9 @@
         --bg-border: #2d2d30;
         --accent-blue: #3b82f6;
         --glow-color: rgba(59, 130, 246, 0.4); 
+        --site-button-background: #3b82f6;
+        --github-button-background: #1C3552;
+        --moreinfo-button-background: #FF5B5B;
     }
 
     .projects-container {
@@ -182,17 +202,40 @@
 
     .project-link {
         display: inline-block;
-        background: var(--accent-blue);
+        background: var(--site-button-background);
         color: white;
         padding: 0.8rem 2.2rem;
         border-radius: 8px;
         text-decoration: none;
         font-weight: 600;
         transition: background 0.2s ease, filter 0.2s ease;
+        margin-right: 15px;
+    }
+     .github-link {
+        display: inline-block;
+        background: var(--github-button-background);
+        color: white;
+        padding: 0.8rem 2.2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.2s ease, filter 0.2s ease;
+        margin-right: 15px;
+    }
+     .moreinfo-link {
+        display: inline-block;
+        background: var(--moreinfo-button-background);
+        color: white;
+        padding: 0.8rem 2.2rem;
+        border-radius: 8px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: background 0.2s ease, filter 0.2s ease;
+        margin-right: 15px;
     }
 
-    .project-link:hover {
-        background: #2563eb;
+    .project-link:hover, .github-link:hover, .moreinfo-link:hover {
+        background: #252529;
         filter: brightness(1.1);
     }
 
@@ -233,7 +276,27 @@
         .project-link {
             display: block;
             text-align: center;
-            background: var(--accent-blue);
+            background: var(--site-button-background);
+            color: white;
+            padding: 0.75rem;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+           .github-link {
+            display: block;
+            text-align: center;
+            background: var(--github-button-background);
+            color: white;
+            padding: 0.75rem;
+            border-radius: 8px;
+            font-weight: 600;
+            margin-top: 1rem;
+        }
+           .moreinfo-link {
+            display: block;
+            text-align: center;
+            background: var(--moreinfo-button-background);
             color: white;
             padding: 0.75rem;
             border-radius: 8px;
