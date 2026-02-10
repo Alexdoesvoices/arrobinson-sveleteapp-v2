@@ -25,7 +25,7 @@
     ]
 </script>
 
-<section id="projects">
+<section id="projectsold" class="projectsold">
     <h1>Projects</h1>
 
     <div class="projects-container">
@@ -62,7 +62,7 @@
 </section>
 
 <style>
-    :root {
+    section.projectsold {
         --card-max-width: 900px;
         --card-fixed-height: 300px;
         --image-ratio: 35%;

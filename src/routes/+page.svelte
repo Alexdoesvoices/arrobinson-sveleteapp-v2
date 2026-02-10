@@ -1,9 +1,8 @@
 <script>
     import About from "$lib/about.svelte";
-    import Projects from "$lib/projects.svelte";
     import Top from "$lib/top.svelte";
-    import Navbar from "$lib/nav.svelte";
-    import Projectssection from "$lib/projects/projectssection.svelte";
+    import Navbar from "$lib/components/navbar.svelte";
+    import Projects from "$lib/projects/projects.svelte";
 </script>
 
 <main>
@@ -11,7 +10,6 @@
     <Top />
     <!-- <About /> -->
     <Projects />
-    <!-- <Projectssection /> -->
 </main>
 
 
