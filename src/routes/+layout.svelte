@@ -23,6 +23,11 @@
 
 <footer>
     <p>Made with Sveltekit</p>
+    <br>
+    <a href="https://github.com/Alexdoesvoices/arrobinson-sveleteapp-v2" target="_blank" class="footer-link">
+        <img src="/assets/images/github.svg" alt="Discord" class="footer-icon" />
+        View in Github
+    </a>
 </footer>
 
 
@@ -75,4 +80,26 @@
         0% { transform: scale(1); opacity: 0.5; }
         100% { transform: scale(1.3); opacity: 1; }
     }
+ .footer-link {
+  display: inline-flex;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  margin-left: 5px;
+  transition: opacity 0.2s;
+}
+
+.footer-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+  /* color: aqua; */
+}
+
+.footer-icon {
+  width: 20px;  /* Adjust size to match your font height */
+  height: 20px;
+  margin-right: 5px;
+  /* If your SVG is black, this makes it white to match your text */
+  filter: brightness(0) invert(1); 
+}
 </style>
