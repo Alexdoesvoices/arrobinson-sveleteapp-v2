@@ -1,4 +1,4 @@
-<button><a href="/#projects2">✕ Return to projects</a></button>
+<button><a href="/#projects">✕ Return to projects</a></button>
 
 
 
