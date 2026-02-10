@@ -4,7 +4,7 @@
         title: 'Alexdoesvoices DiscordJs Bot',
         description: 'Discord bot built with the BUN runtime and the Discord.js framework.',
         image: '/assets/images/bun/logo-centered.svg',
-        link: 'https://github.com/Alexdoesvoices/discordjs-adev-bot',
+        link: '#',
         github: 'https://github.com/Alexdoesvoices/discordjs-adev-bot',
         more: '#',
 
@@ -13,7 +13,7 @@
                 { name: 'DiscordJS', color: '#3178c6' },
             ],
         },
-         {
+        {
         title: 'Alexdoesvoices Collection',
         description: 'Documentation site used as a digital databse of all items in my various collections.',
         image: '/assets/images/arobinson6.svg',
