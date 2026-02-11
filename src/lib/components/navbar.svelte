@@ -15,6 +15,8 @@ let menuOpen = $state(false);
         <div class="links">
             <a href="/#top" onclick={toggleMenu}>Top</a>
             <a href="/#projects" onclick={toggleMenu}>Projects</a>
+            <!-- <a href="/scripts/" onclick={toggleMenu}>Scripts</a> -->
+
         </div>
     </nav>
 {/if}
