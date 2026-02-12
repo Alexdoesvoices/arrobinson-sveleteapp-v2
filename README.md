@@ -1,6 +1,25 @@
-# Built using SvelteKit
+# **Alexdoesvoices SvelteKit Website**
 
-## TODO:
-- Redesign the projects page to have a dedicated more info page for each project.
+Personal website built with Bun and SvelteKit 5.
 
+---
+
+## **Stack**
+
+```
+RunTime: Bun
+
+FrameWork: SvelteKit
+
+Process Manager: PM2
+```
+
+---
+
+## **Todo**
+
+Here is a list of features that are planned to be built and implemented into the project.
+
+- 
+---
 
