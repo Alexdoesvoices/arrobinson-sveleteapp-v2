@@ -4,9 +4,9 @@
         title: 'Alexdoesvoices DiscordJs Bot',
         description: 'Discord bot built with the BUN runtime and the Discord.js framework.',
         image: '/assets/images/bun/logo-centered.svg',
-        link: '#',
+        link: '#none',
         github: 'https://github.com/Alexdoesvoices/discordjs-adev-bot',
-        more: '#',
+        more: '#none',
 
         tags: [
                 { name: 'Bun', color: '#f472b6' }, 
@@ -55,17 +55,17 @@
                 </div>
 
                     <div class="link-area">
-                        {#if project.link !== '#'}
+                        {#if project.link !== '#none'}
                         <a href={project.link} target="_blank" rel="noopener noreferrer" class="project-link">
                             View Project
                         </a>
                         {/if}
-                        {#if project.github !== '#'}
+                        {#if project.github !== '#none'}
                         <a href={project.github} target="_blank" rel="noopener noreferrer" class="github-link">
                             Github
                         </a>
                         {/if}
-                        {#if project.more !== '#'}
+                        {#if project.more !== '#none'}
                         <a href={project.more} rel="noopener noreferrer" class="moreinfo-link">
                             More Info
                         </a>

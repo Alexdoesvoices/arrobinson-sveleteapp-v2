@@ -6,20 +6,14 @@
 
 <div class="bg-ambient"></div>
 
-
 <svelte:head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href={favicon} />
 </svelte:head>
 
-
-
-
 <main>
     {@render children()}
 </main>
-
-
 
 <footer>
     <p>Made with Sveltekit</p>
@@ -29,8 +23,6 @@
         View in Github
     </a>
 </footer>
-
-
 
 <style>
     footer {
@@ -48,10 +40,7 @@
     z-index: 10;
     font-size: 0.9rem;
     opacity: 0.7;
-    
-   
 }
-
 @media (max-width: 600px) {
     footer {
         flex-direction: column; 
