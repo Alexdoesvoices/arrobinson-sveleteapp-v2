@@ -1,3 +1,12 @@
+<script>
+
+</script>
+
 <section id="about">
-    <h1>About!!</h1>
+    <h1>Svelte Snippit!!</h1>
 </section>
+
+<style>
+
+</style>
+
