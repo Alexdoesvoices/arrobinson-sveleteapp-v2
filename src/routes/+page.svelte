@@ -6,7 +6,7 @@
 </script>
 
 <main>
-    <Navbar />
+    <!-- <Navbar /> -->
     <Top />
     <!-- <About /> -->
     <Projects />

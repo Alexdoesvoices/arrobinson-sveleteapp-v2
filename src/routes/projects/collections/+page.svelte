@@ -1,5 +1,5 @@
 <script lang="ts">
-import ReturnProjects from "$lib/projects/returnProjects.svelte";
+import ReturnProjects from "$lib/components/returnProjects.svelte";
 </script>
 
 <ReturnProjects />
