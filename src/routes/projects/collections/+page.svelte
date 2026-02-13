@@ -2,7 +2,7 @@
 import ReturnProjects from "$lib/components/returnProjects.svelte";
 </script>
 
-<ReturnProjects />
+<!-- <ReturnProjects /> -->
 <h1>Hey there people</h1>
 <style>
 * {
