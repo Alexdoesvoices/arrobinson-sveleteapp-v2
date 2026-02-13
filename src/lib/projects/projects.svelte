@@ -81,227 +81,130 @@
 <style>
     section.projects {
         --card-max-width: 900px;
-        --card-fixed-height: 300px;
+        /* Increased height slightly to ensure NO cutoff */
+        --card-height: 320px; 
         --image-ratio: 35%;
-        --bg-card: #1c1c1f;
-        --bg-border: #2d2d30;
-        --accent-blue: #3b82f6;
-        --glow-color: rgba(59, 130, 246, 0.4); 
-        --site-button-background: #3b82f6;
-        --github-button-background: #1C3552;
-        --moreinfo-button-background: #FF5B5B;
+        
+        /* Matching your screenshot's deep dark theme */
+        --bg-card: #1c1c1f; 
+        --bg-border: var(--gray-9);
+        
+        /* Button Colors from Open Props */
+        --site-btn: var(--blue-6);
+        --gh-btn: #24292e; 
+        --info-btn: var(--red-5);
     }
 
     .projects-container {
         display: flex;
         flex-direction: column;
-        gap: 2rem;
+        gap: var(--size-8);
         max-width: var(--card-max-width);
         margin: 0 auto;
-        padding: 2rem 1rem;
+        padding: var(--size-8) var(--size-4);
     }
 
     .project-card {
         display: flex;
         flex-direction: row;
         background: var(--bg-card);
-        border-radius: 16px;
+        border-radius: var(--radius-3);
         border: 1px solid var(--bg-border);
         overflow: hidden;
-        height: var(--card-fixed-height);         
-        transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1), 
-                    border-color 0.3s ease, 
-                    box-shadow 0.3s ease;
-    }
-
-    .project-card:hover {
-        transform: translateY(-6px);
-        border-color: var(--accent-blue);
-        box-shadow: 0 12px 30px -5px var(--glow-color);
+        /* Use min-height so it can expand if text is long, avoiding cutoff */
+        min-height: var(--card-height);
+        transition: transform 0.2s var(--ease-2);
     }
 
     .project-image {
         flex: 0 0 var(--image-ratio);
         background: #252529;
-        overflow: hidden;
+        display: grid;
+        place-items: center;
+        padding: var(--size-4);
+        border-right: 1px solid var(--bg-border);
     }
 
     .project-image img {
         width: 100%;
         height: 100%;
-        object-fit: cover;
-        transition: transform 0.5s ease;
-    }
-
-    .project-card:hover .project-image img {
-        transform: scale(1.08);
+        object-fit: contain;
     }
 
     .project-info {
         flex: 1;
-        padding: 2.5rem 3rem;
+        /* Padding is key: size-7 gives buttons room at the bottom */
+        padding: var(--size-7) var(--size-8); 
         display: flex;
         flex-direction: column;
-        /* overflow: hidden;  */
-    }
-
-    .text-top {
-        flex-grow: 1;
-        display: flex;
-        flex-direction: column;
-        min-height: 0;
+        justify-content: space-between;
     }
 
     h3 {
-        margin: 0 0 0.5rem 0;
-        font-size: 2.2rem;
-        font-weight: 700;
-        color: #ffffff;
-        line-height: 1.2;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        line-clamp: 2; 
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        margin: 0 0 var(--size-2) 0;
+        font-family: serif; /* Matches your screenshot's title style */
+        font-size: var(--font-size-6);
+        font-weight: var(--font-weight-9);
+        color: var(--gray-0);
     }
 
     p {
-        margin: 0 0 1rem 0;
-        font-size: 1.1rem;
-        color: #a1a1aa;
-        line-height: 1.5;
-        display: -webkit-box;
-        -webkit-line-clamp: 3;
-        line-clamp: 3; 
-        -webkit-box-orient: vertical;
-        overflow: hidden;
+        margin-bottom: var(--size-4);
+        font-size: var(--font-size-2);
+        color: var(--gray-4);
+        line-height: var(--font-lineheight-3);
     }
 
    .tags {
         display: flex;
         flex-wrap: wrap;
-        gap: 0.6rem;
-        margin-bottom: 1rem;
+        gap: var(--size-2);
+        margin-bottom: var(--size-6);
     }
 
     .tag {
-        color: #ffffff; 
-        padding: 4px 12px;
-        border-radius: 6px;
-        font-size: 1rem;
-        font-weight: 700; 
-        letter-spacing: 0.05em;
-        border: none;
-        text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.2); 
+        color: white; 
+        padding: var(--size-1) var(--size-3);
+        border-radius: var(--radius-2);
+        font-family: sans-serif;
+        font-size: var(--font-size-1);
+        font-weight: var(--font-weight-7); 
     }
 
     .link-area {
-        margin-top: auto;
-        padding-top: 1rem;
+        display: flex;
+        flex-wrap: wrap;
+        gap: var(--size-4);
+        /* This pushes it down, but the padding in .project-info keeps it from cutting off */
+        margin-top: auto; 
+        padding-bottom: var(--size-2); 
     }
 
-    .project-link {
-        display: inline-block;
-        background: var(--site-button-background);
-        color: white;
-        padding: 0.8rem 2.2rem;
-        border-radius: 8px;
+    .project-link, .github-link, .moreinfo-link {
+        display: inline-flex;
+        align-items: center;
+        padding: var(--size-2) var(--size-7);
+        border-radius: var(--radius-2);
         text-decoration: none;
-        font-weight: 600;
-        transition: background 0.2s ease, filter 0.2s ease;
-        margin-right: 15px;
-    }
-     .github-link {
-        display: inline-block;
-        background: var(--github-button-background);
+        font-family: sans-serif;
+        font-size: var(--font-size-1);
+        font-weight: var(--font-weight-7);
         color: white;
-        padding: 0.8rem 2.2rem;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: background 0.2s ease, filter 0.2s ease;
-        margin-right: 15px;
+        transition: filter 0.2s var(--ease-2);
     }
-     .moreinfo-link {
-        display: inline-block;
-        background: var(--moreinfo-button-background);
-        color: white;
-        padding: 0.8rem 2.2rem;
-        border-radius: 8px;
-        text-decoration: none;
-        font-weight: 600;
-        transition: background 0.2s ease, filter 0.2s ease;
-        margin-right: 15px;
-    }
+
+    .project-link { background: var(--site-btn); }
+    .github-link { background: var(--gh-btn); }
+    .moreinfo-link { background: var(--info-btn); }
 
     .project-link:hover, .github-link:hover, .moreinfo-link:hover {
-        background: #252529;
-        filter: brightness(1.1);
+        filter: brightness(1.2);
     }
 
     @media (max-width: 850px) {
-        .project-card {
-            flex-direction: column;
-            height: auto; 
-            min-height: 0; 
-        }
-
-        .project-image {
-            flex: 0 0 auto; 
-            width: 100%;
-            border-bottom: 1px solid var(--bg-border);
-        }
-
-        .project-image img {
-            object-fit: contain; 
-            width: 100%;
-            height: 200px; 
-            display: block;
-        }
-
-        .project-info {
-            padding: 1.5rem; 
-            gap: 1rem;
-        }
-
-        h3 {
-            font-size: 1.5rem;
-            display: -webkit-box;
-            -webkit-line-clamp: 2;
-            line-clamp: 2;
-            -webkit-box-orient: vertical;
-            overflow: hidden;
-        }
-
-        .project-link {
-            display: block;
-            text-align: center;
-            background: var(--site-button-background);
-            color: white;
-            padding: 0.75rem;
-            border-radius: 8px;
-            font-weight: 600;
-            margin-top: 1rem;
-        }
-           .github-link {
-            display: block;
-            text-align: center;
-            background: var(--github-button-background);
-            color: white;
-            padding: 0.75rem;
-            border-radius: 8px;
-            font-weight: 600;
-            margin-top: 1rem;
-        }
-           .moreinfo-link {
-            display: block;
-            text-align: center;
-            background: var(--moreinfo-button-background);
-            color: white;
-            padding: 0.75rem;
-            border-radius: 8px;
-            font-weight: 600;
-            margin-top: 1rem;
-        }
+        .project-card { flex-direction: column; min-height: auto; }
+        .project-image img { height: 200px; }
+        .project-info { padding: var(--size-6); }
+        .link-area { flex-direction: column; }
     }
 </style>
