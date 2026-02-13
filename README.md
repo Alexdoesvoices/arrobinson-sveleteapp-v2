@@ -20,6 +20,6 @@ Process Manager: PM2
 
 Here is a list of features that are planned to be built and implemented into the project.
 
-- 
+- Implement a blog page.
 ---
 
