@@ -18,8 +18,6 @@ Process Manager: PM2
 
 ## **Todo**
 
-Here is a list of features that are planned to be built and implemented into the project.
-
-- Implement a blog page.
+- Add discord to the footer.
 ---
 
