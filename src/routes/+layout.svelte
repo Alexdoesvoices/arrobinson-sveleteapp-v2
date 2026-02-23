@@ -19,10 +19,14 @@
 
 <footer>
     <p>Made with Sveltekit</p>
-    <br>
+    <br>    
     <a href="https://github.com/Alexdoesvoices/arrobinson-sveleteapp-v2" target="_blank" class="footer-link">
-        <img src="/assets/images/github.svg" alt="Discord" class="footer-icon" />
+        <img src="/assets/images/github.svg" alt="github" class="footer-icon" />
         View in Github
+    </a>
+    <a href="https://discord.com/invite/eh6rPmZmHw" target="_blank" class="footer-link">
+        <img src="/assets/images/discord.svg" alt="discord" class="footer-icon" />
+        Join the Discord 
     </a>
 </footer>
 

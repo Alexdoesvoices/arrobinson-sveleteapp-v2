@@ -18,6 +18,5 @@ Process Manager: PM2
 
 ## **Todo**
 
-- Add discord to the footer.
 ---
 
