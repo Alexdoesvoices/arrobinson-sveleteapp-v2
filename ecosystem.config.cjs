@@ -1,18 +1,20 @@
 module.exports = {
   apps: [{
     name: 'adv-sv-app',
-    // Use the FULL path here
-    script: 'build/index.js', 
+    // Point this to your absolute script path
+    script: '/home/arobinson/dev/projects/arrobinson-svelteapp-v2/build/index.js',
+    // This tells PM2 to use Bun instead of Node
+    interpreter: 'bun', 
     env: {
       NODE_ENV: 'production',
       PORT: 7085,
-      // Change to your domain to avoid IP binding issues
-      ORIGIN: 'https://alexdoesvoices.com', 
+      // Using 0.0.0.0 is safer for reboots than a specific local IP
       HOST: '0.0.0.0', 
+      ORIGIN: 'https://alexdoesvoices.com',
       ADDRESS_HEADER: 'x-forwarded-for',
       PROTOCOL_HEADER: 'x-forwarded-proto'
     },
-    // This is the "Safety Net" for reboots
+    // Gives the system time to initialize networking
     restart_delay: 5000 
   }]
 }
