@@ -12,7 +12,7 @@ bun run build
 
 pm2 restart ecosystem.config.cjs
 
-echo "Deploy Successful: $(date +'%H:%M')" | mail -v -s "Alexdoesvoices site rebuilt" alexdoesvoices05@gmail.com
+echo "Deploy Successful: $(date +'%H:%M')"
 
 echo "Done!"
 
