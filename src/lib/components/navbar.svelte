@@ -16,6 +16,7 @@ const toggleMenu = () => menuOpen = !menuOpen;
         <div class="links">
             <a href={resolve("/#top")} onclick={toggleMenu}>Top</a>
             <a href={resolve("/#projects")} onclick={toggleMenu}>Projects</a>
+            <!-- <a href={resolve("/equipment")} onclick={toggleMenu}>Equipment</a> -->
             <!-- <a href="/scripts/" onclick={toggleMenu}>Scripts</a> -->
 
         </div>
