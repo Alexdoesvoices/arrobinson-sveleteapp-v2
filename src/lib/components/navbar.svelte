@@ -1,8 +1,9 @@
 <script>
 import { fly } from 'svelte/transition';
-let menuOpen = $state(false);
+import { resolve } from '$app/paths';
 
-    const toggleMenu = () => menuOpen = !menuOpen;
+let menuOpen = $state(false);
+const toggleMenu = () => menuOpen = !menuOpen;
 </script>
 
 
@@ -13,8 +14,8 @@ let menuOpen = $state(false);
 {#if menuOpen}
     <nav class="navbar"transition:fly={{ x: 300, duration: 300 }}>
         <div class="links">
-            <a href="/#top" onclick={toggleMenu}>Top</a>
-            <a href="/#projects" onclick={toggleMenu}>Projects</a>
+            <a href={resolve("/#top")} onclick={toggleMenu}>Top</a>
+            <a href={resolve("/#projects")} onclick={toggleMenu}>Projects</a>
             <!-- <a href="/scripts/" onclick={toggleMenu}>Scripts</a> -->
 
         </div>

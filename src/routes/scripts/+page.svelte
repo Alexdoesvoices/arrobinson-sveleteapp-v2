@@ -1,10 +1,9 @@
 <script>
-
-
+import { resolve } from '$app/paths';
 </script>
 
 <section class="scriptspage">
-    <button><a href="/#top">✕ Return </a></button>
+    <button><a href={resolve("/#top")}>✕ Return </a></button>
     <h1>Hey there</h1>
 </section>
 
@@ -13,9 +12,6 @@
 
 
 <style>
-     section.scriptspage {
-
-    }
     button {
         position: fixed;
         right: 20px;

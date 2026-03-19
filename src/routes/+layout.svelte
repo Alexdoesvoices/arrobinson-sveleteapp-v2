@@ -2,6 +2,7 @@
     import './layout.css';
     import Navbar from '$lib/components/navbar.svelte';
     import favicon from '$lib/assets/favicon.svg';
+
     let { children } = $props();
 </script>
 

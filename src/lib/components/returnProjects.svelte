@@ -1,4 +1,8 @@
-<button><a href="/#projects">✕ Return to projects</a></button>
+<script>
+      import { resolve } from '$app/paths';
+</script>
+
+<button><a href={resolve("/#projects")}>✕ Return to projects</a></button>
 
 
 
