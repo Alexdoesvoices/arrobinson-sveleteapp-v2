@@ -4,7 +4,6 @@ $apps = @(
     "fastfetch"
     "firefox"
     "flow-launcher"
-    "googledrive"
     "micro"
     "mingw"
     "nodejs"
