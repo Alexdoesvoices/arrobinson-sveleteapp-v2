@@ -10,7 +10,7 @@ chmod +x deploy.sh
 bun install
 bun run build
 
-pm2 restart ecosystem.config.cjs
+pm2 restart ecosystem.config.cjs --update-env
 
 echo "Deploy Successful: $(date +'%H:%M')"
 
