@@ -1,5 +1,5 @@
 <script lang="ts">
-    import "./layout.css";
+    import "./app.css";
     import Navbar from "$lib/components/navbar.svelte";
     import favicon from "$lib/assets/favicon.svg";
 
