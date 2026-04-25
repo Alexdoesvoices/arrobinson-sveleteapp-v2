@@ -10,8 +10,8 @@ module.exports = {
         PORT: 7085,
         HOST: '0.0.0.0', 
         ORIGIN: 'https://alexdoesvoices.com',
-        ADDRESS_HEADER: 'x-forwarded-for',
-        PROTOCOL_HEADER: 'x-forwarded-proto'
+        // ADDRESS_HEADER: 'x-forwarded-for',
+        // PROTOCOL_HEADER: 'x-forwarded-proto'
       },
       restart_delay: 5000,
       max_memory_restart: '500M'
