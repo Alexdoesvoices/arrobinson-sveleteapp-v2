@@ -54,7 +54,7 @@ import {projects} from '$lib/sections/projects/projects-list';
 </section>
 
 <style>
-    #newprojects {
+    #projects {
         padding: 4rem clamp(1rem, 5%, 1.5rem);
         max-width: 1100px;
         margin: 0 auto;
