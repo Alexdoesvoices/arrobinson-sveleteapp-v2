@@ -135,7 +135,6 @@ import {projects} from '$lib/sections/projects/projects-list';
     .text-top {
         flex-grow: 1;
     }
-
     h3 {
         font-size: clamp(1.25rem, 4vw, 1.5rem);
         font-weight: 700;
