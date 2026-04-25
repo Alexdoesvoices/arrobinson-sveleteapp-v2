@@ -41,7 +41,7 @@
     ]
 </script>
 
-<section id="projects" class="projects">
+<section id="oldprojects" class="projects">
     <h1>Projects</h1>
 
     <div class="projects-container">
