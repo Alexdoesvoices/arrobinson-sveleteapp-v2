@@ -18,5 +18,9 @@ Process Manager: PM2
 
 ## **Todo**
 
+```
+Redo the images folder to be sorted better.
+```
+
 ---
 

@@ -29,12 +29,13 @@ export const projects = [
         {
         title: 'Sports Scores Site',
         description: 'Simple site that shows the days sports games. Right now its only the nba.',
-        image: '/assets/images/arobinson6.svg',
+        image: '/assets/images/basketball.svg',
         link: 'https://scores.alexdoesvoices.com',
         github: 'https://github.com/Alexdoesvoices/sports-scores-site',
         more: '#none',
         tags: [
-               
+                { name: 'Svelte Kit', color: 'orange' },
+                { name: 'Sports', color: '#28243a' },
             ],
         },
     ]
