@@ -27,6 +27,17 @@
 
             ],
         },
+        {
+        title: 'Sports Scores Site',
+        description: 'Simple site that shows the days sports games. Right now its only the nba.',
+        image: '/assets/images/arobinson6.svg',
+        link: 'https://scores.alexdoesvoices.com',
+        github: 'https://github.com/Alexdoesvoices/sports-scores-site',
+        more: '#none',
+        tags: [
+               
+            ],
+        },
     ]
 </script>
 
